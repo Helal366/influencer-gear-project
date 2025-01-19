@@ -1,5 +1,11 @@
 /* BANNER STYLE IN HEADER SECTION */
-
+.alibaba{grid-area: alibaba;}
+.amazon{grid-area: amazon;}
+.daraz{grid-area: daraz;}
+.ebay{grid-area: ebay;}
+.rakuten{grid-area: rakuten;}
+.walmart{grid-area: walmart;}
+.target{grid-area: target;}
 .banner-container{
     display: grid;
     grid-template-columns: 40.41vw 32.986vw;
@@ -46,7 +52,9 @@
 
 .icon-container{
     width: 77.1vw;
-    height: 7.64vw;
+    /* height: 7.64vw; */
+    padding-top: 2.5vw;
+    padding-bottom: 2.5vw;
     margin: 0 auto 6.94vw auto;
     display: flex;
     justify-content:space-evenly;
@@ -67,4 +75,18 @@
     margin-top: -0.208vw;
     margin-bottom: -0.208vw;
     z-index: -1;
+}
+.icon-container .icon-image{
+    width: 6vw;
+}
+
+@media screen and (min-width:586px) and (max-width:922px) {
+    .icon-container{
+        flex-wrap: wrap;
+        /* display: grid;
+        row-gap: 1vw;
+        grid-template-areas: 
+        "alibaba alibaba alibaba amazon amazon amazon daraz daraz daraz ebay ebay ebay"
+        "rakuten rakuten rakuten rakuten walmart walmart walmart  walmart target target target target "; */
+    }
 }

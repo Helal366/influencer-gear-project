@@ -6,10 +6,10 @@ body{font-family:"Poppins", serif;}
     --color1: rgb(58, 58, 58);
     --color-btn: rgb(224, 44, 109);
 }
-
 .navbar, 
-
-.banner-container, .collection-section {
+.banner-container, 
+.collection-section,
+.fratured-section {
     box-sizing: border-box;
     width: 83.33vw;
 }
@@ -18,7 +18,7 @@ body{font-family:"Poppins", serif;}
 }
 /* NAVBAR IN HEADER SECTION */
 .navbar{
-    margin: 6.1vw auto;
+    margin: 8.1vw auto 6.1vw auto;
     display: flex;
     justify-content: space-between;
 }
@@ -26,11 +26,15 @@ body{font-family:"Poppins", serif;}
     color: var(--color1);
     font-size: 1.67vw;
     font-weight: 700;
+    background-image: url("/icons/three-lines2.png");
+    background-position: top left;
+    background-size: 6.7vw 6.7vw;
+    background-repeat: no-repeat;
+    display: none;
 }
 .nav-link-container{
     display: flex;
     gap: 2.36vw;
-    margin-bottom: 5.5vw;
 }
 .nav-link{
     color: var(--color1);
@@ -41,5 +45,34 @@ body{font-family:"Poppins", serif;}
 .nav-link a{
     text-decoration: none;
     color: var(--color1);
+}
+
+/* RESPONSIVE NAVBAR */
+@media screen and (max-width: 586px) {
+.navbar, 
+.banner-container, 
+.collection-section,
+.fratured-section{
+    width:92vw;
+}
+.navbar{
+    justify-content: center;
+}
+.nav-link-container{
+    width:22vw;
+    justify-content: flex-end;}
+.brand-name{
+        display: block;
+        width: 65vw;
+        font-size: 4.45vw;
+        text-align: right;
+    }
+.link1, .link2, .link3, .link4, .link5{
+        display: none;
+    }
+.link6{
+    font-size: 4.45vw;
+}
+    
 }
 

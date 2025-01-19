@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+.footer-section{
+    width: 100vw;
+    background-color: rgb(0,0,0);
+}
+.footer-title{
+    color: rgb(255, 255, 255);
+    font-size: 1.66vw;
+    font-weight: 700;
+}
+.footer-title-description{
+    color: rgb(217, 219, 225);
+    font-family: Manrope;
+    font-size: 0.9722vw;
+    font-weight: 700;
+}
+.footer-end-line{
+    color: rgb(217, 219, 225);
+    font-family: Manrope;
+    font-size: 0.972vw;
+    font-weight: 700;
+}
+.icon, .image-icon{
+    width: 2.22vw;
+    height: 2.22vw;
+    border-radius: 50%;
+}
+
+.footer-content-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.21vw;
+    width: 19vw;
+    margin:0 auto;
+    padding: 3.48vw 1vw;
+}
+.footer-content-container p{
+    text-align: center;
+}
+.footer-icons-container{
+    display: flex;
+    justify-content: center;
+    gap:0.14vw;
+}
+

@@ -1,3 +1,6 @@
+.main-section>section{
+    margin-bottom: 6.944vw;
+}
 .collection-section{
     display: flex;
     flex-direction: column;
@@ -9,30 +12,48 @@
     font-weight: 600;
     font-size: 2.138vw;
     text-align: center;
+    margin-bottom: 2.083vw;
 }
 .collection-card-container{
     display: grid;
     grid-template-columns: 22.84vw 22.84vw 22.84vw;
-    grid-template-rows: 30.05vw 30.05vw 30.05vw;
+    grid-template-rows: 33.06vw 33.06vw 33.06vw;
     gap: 2.083vw;
     margin: 0 auto;
 }
 .collection-card{
     border-radius: 5px;
-    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 2.77vw 0px rgba(0, 0, 0, 0.15);
     background: rgb(255, 255, 255);
     /* margin-left: 2.1vw; */
+}
+.card-title{
+    color: rgb(24, 25, 31);
+font-size: 1.944vw;
+font-weight: 500;
+}
+.card-price{
+    color: rgba(0, 0, 0, 0.87);
+font-size: 1.66vw;
+font-weight: 400;
+}
+.card-line1{
+    color: rgb(120, 120, 133);
+font-size: 0.972vw;
+font-weight: 700;
+
 }
 .collection-card .card-rating{
     width: 6.472vw;
     height: 1.1vw;
 }
-span{
+.span-rating{
     color: rgb(94, 99, 102);
 font-family: Roboto;
 font-size: 0.9722vw;
 font-weight: 700;
 }
+
 .collection-card .image{
     width: 20.83vw;
     height: 17.77vw;
@@ -42,4 +63,14 @@ font-weight: 700;
 }
 .card-title, .card-price, .card-rating, .card-line1{
     padding-left: 0.972vw;
+}
+.see-more{
+    width: 72.7vw;
+    padding-top: 4.4vw;
+    margin-left: 5.29vw;
+    text-align: right;
+    padding-right: 0.1vw;
+    font-size: 1.11vw;
+    font-weight: 600;
+    color: var(--color-btn);
 }

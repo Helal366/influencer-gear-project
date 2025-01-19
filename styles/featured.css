@@ -1,0 +1,29 @@
+.featured-container{
+    display: flex;
+    gap: 6.66vw;
+    width:77.08vw;
+    margin: 0 auto;
+}
+
+.featured-image, .featured-gear-image{
+    width: 28.05vw;
+    height: 18.75vw;
+}
+
+.featured-title{
+    color: rgb(10, 8, 38);
+    font-size: 2.64vw;
+    font-weight: 700;
+    margin-top: 1.6vw;
+}
+.featured-title-description{
+    color: rgb(108, 108, 108);
+    font-size: 1.11vw;
+    font-weight: 700;
+    padding-top: 1.11vw;
+    padding-bottom: 1.11vw;
+}
+.banner-btn{
+    border-radius: 0;
+}
+
