@@ -1,0 +1,45 @@
+.collection-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.collection-title{
+    color: var(--color1);
+    font-weight: 600;
+    font-size: 2.138vw;
+    text-align: center;
+}
+.collection-card-container{
+    display: grid;
+    grid-template-columns: 22.84vw 22.84vw 22.84vw;
+    grid-template-rows: 30.05vw 30.05vw 30.05vw;
+    gap: 2.083vw;
+    margin: 0 auto;
+}
+.collection-card{
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    background: rgb(255, 255, 255);
+    /* margin-left: 2.1vw; */
+}
+.collection-card .card-rating{
+    width: 6.472vw;
+    height: 1.1vw;
+}
+span{
+    color: rgb(94, 99, 102);
+font-family: Roboto;
+font-size: 0.9722vw;
+font-weight: 700;
+}
+.collection-card .image{
+    width: 20.83vw;
+    height: 17.77vw;
+    padding-top: 1.18vw;
+    padding-right: 1.04vw;
+    padding-left: 0.972vw;
+}
+.card-title, .card-price, .card-rating, .card-line1{
+    padding-left: 0.972vw;
+}
