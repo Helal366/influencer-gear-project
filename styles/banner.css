@@ -11,6 +11,7 @@
     grid-template-columns: 40.41vw 32.986vw;
     gap: 9.23vw;
     margin-bottom: 4.79vw;
+    border: 2px solid red;
 }
 
 .banner-title{
@@ -42,6 +43,7 @@
     background-image: url("/images/Circle\ design.svg");
     background-repeat: no-repeat;
     background-size: 32.98vw 32.98vw ;
+    border: 2px solid green;
 }
 .banner-image{
     width:30.55vw;
@@ -78,6 +80,32 @@
 }
 .icon-container .icon-image{
     width: 6vw;
+}
+
+/* RESPONSIVE STARTED */
+
+@media screen and (max-width: 586px) {
+    .banner-container{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+    .banner-image-container{
+        width: 71.38vw;
+        height: 71.38vw;
+        background-size: 71.38vw 71.38vw;
+        padding: 14.17vw 0 0 6.11vw;
+    }
+    .banner-image{
+        width:56.11vw;
+        height: 52.77vw;
+    }
+    .banner-title{
+        font-size: 7.78vw;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 0vw;
+    }
 }
 
 @media screen and (min-width:586px) and (max-width:922px) {
