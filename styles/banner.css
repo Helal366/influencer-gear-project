@@ -136,11 +136,14 @@
 @media screen and (min-width:586px) and (max-width:922px) {
     .icon-container{
         flex-wrap: wrap;
-        gap:12vw;
+        gap:7vw;
         /* display: grid;
         row-gap: 1vw;
         grid-template-areas: 
         "alibaba alibaba alibaba amazon amazon amazon daraz daraz daraz ebay ebay ebay"
         "rakuten rakuten rakuten rakuten walmart walmart walmart  walmart target target target target "; */
+    }
+    .icon-image{
+        width: 10vw;
     }
 }
