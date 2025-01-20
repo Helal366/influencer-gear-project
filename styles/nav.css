@@ -1,20 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
 
 *{margin: 0;  padding: 0;}
-body{font-family:"Poppins", serif;}
+body{font-family:"Poppins", serif;
+    box-sizing: border-box;
+    }
+
 :root{
     --color1: rgb(58, 58, 58);
     --color-btn: rgb(224, 44, 109);
-}
+    }
+
 .navbar, 
 .banner-container, 
 .collection-section,
-.fratured-section {
-    box-sizing: border-box;
-    width: 83.33vw;
+.fratured-section 
+{
+    max-width: 83.3vw; 
+    margin-left: auto;
+    margin-right: auto;
 }
 .header-section, .main-section{
-   padding: 0 8.33vw;
+    padding: 0 8.3vw;
 }
 /* NAVBAR IN HEADER SECTION */
 .navbar{
@@ -26,10 +34,11 @@ body{font-family:"Poppins", serif;}
     color: var(--color1);
     font-size: 1.67vw;
     font-weight: 700;
-    background-image: url("/icons/three-lines2.png");
-    background-position: top left;
-    background-size: 6.7vw 6.7vw;
-    background-repeat: no-repeat;
+}
+.three-line{
+    width: 3vw;
+    height: 3vw;
+  
     display: none;
 }
 .nav-link-container{
@@ -49,6 +58,10 @@ body{font-family:"Poppins", serif;}
 
 /* RESPONSIVE NAVBAR */
 @media screen and (max-width: 586px) {
+.header-section, 
+.main-section{
+        padding: 0 4vw;
+     }
 .navbar, 
 .banner-container, 
 .collection-section,
@@ -59,20 +72,28 @@ body{font-family:"Poppins", serif;}
     justify-content: center;
 }
 .nav-link-container{
-    width:22vw;
+    gap: 0;
+    width:20vw;
     justify-content: flex-end;}
+.three-line{
+    width: 6.66vw;
+    height: 6.66vw;
+    display: block;
+    position: absolute;
+    top: 8.6vw;
+    left: 4.44vw;
+    }
 .brand-name{
-        display: block;
-        width: 65vw;
-        font-size: 4.45vw;
-        text-align: right;
+    width: 65vw;
+    font-size: 4.45vw;
+    text-align: right;
     }
 .link1, .link2, .link3, .link4, .link5{
-        display: none;
+    position:absolute;    
+    display: none;
     }
 .link6{
     font-size: 4.45vw;
-}
-    
+    }
 }
 

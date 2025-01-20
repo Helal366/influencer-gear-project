@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 .footer-section{
-    width: 100vw;
+    /* width: 100vw; */
     background-color: rgb(0,0,0);
 }
 .footer-title{
@@ -33,13 +32,33 @@
     width: 19vw;
     margin:0 auto;
     padding: 3.48vw 1vw;
-}
-.footer-content-container p{
     text-align: center;
 }
+
 .footer-icons-container{
     display: flex;
     justify-content: center;
-    gap:0.14vw;
+    gap:0.16vw;
 }
 
+/* RESPONSIVE SECTION */
+@media screen and (max-width:586px) {
+    .footer-content-container{
+        width: 65vw;
+        padding: 13.8vw 1vw;
+    }
+    .footer-title{
+        font-size: 4.44vw;
+        font-weight: 700;
+    }
+    .footer-title-description,
+    .footer-end-line{
+        font-size: 3.3vw;
+        padding-top: 1.2vw;
+        padding-bottom: 2.4vw;
+    }
+    .icon, .image-icon{
+        width: 6.67vw;
+        height: 6.67vw;
+    }
+}
